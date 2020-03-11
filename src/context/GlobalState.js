@@ -20,7 +20,7 @@ export const GlobalProvider = ({children}) => {
     // get transaction details
     async function getTransactions() {
         try {
-            const res = await axios.get('/api/v1/transactions');
+            const res = await axios.get('/.netlify/functions/server');
             dispatch({
                 type: 'GET_TRANSACTIONS',
                 payload: res.data.data

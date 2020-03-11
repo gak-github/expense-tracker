@@ -10,6 +10,12 @@
 
 # production
 /build
+/functions-build
+/lambda
+.cache
+
+# netlify
+.netlify
 
 # misc
 .DS_Store
